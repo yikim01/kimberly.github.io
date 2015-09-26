@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Kimberly Yi</title>
 
   <!-- CSS -->
@@ -14,31 +15,29 @@
   <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
 
-  <!-- JS -->
-  <script type="text/javascript" src="/js/bootstrap.js"></script>
-  <script type="text/javascript" src="/js/app.js"></script>
 
 </head>
 <body>
-  <nav class="navbar navbar-inverse navbar-fixed-top home-nav">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".nav-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#home" class="scroll">Home</a></li>
-            <li><a href="#about-me" class="scroll">About Me</a></li>
-            <li><a href="#resume" class="scroll" >Resume</a></li>
-            <li><a href="#projects" class="scroll">Projects</a></li>
-            <li><a href="#contact" class="scroll">Contact</a></li>
-          </ul>
-        </div><!-- nav-collapse -->
       </div><!-- navbar-header -->
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#home" class="scroll">Home</a></li>
+          <li><a href="#about-me" class="scroll">About Me</a></li>
+          <li><a href="#resume" class="scroll" >Resume</a></li>
+          <li><a href="#projects" class="scroll">Projects</a></li>
+          <li><a href="#contact" class="scroll">Contact</a></li>
+        </ul>
+      </div><!-- nav-collapse -->
     </div><!-- container-fluid -->
   </nav><!-- navbar -->
 
@@ -48,11 +47,10 @@
         <div class="col-md-4 text-center">
           <img src="img/avatar.jpg"/>
         </div>
-        <div class="col-md-4 text-center">
+        <div class="col-md-6 text-center">
           <div class="content">
             <h2>Hello, My name is <span>Kimberly Yi</span></h2>
             <p>I am a Web Developer Living in Los Angeles, California.</p>
-            <a class="content-button" href="#about-me"><span>About Me</span></a>
           </div>
         </div>
       </div>
@@ -79,7 +77,6 @@
         <div class="col-sm-4 text-center">
           <i class="fa fa-database"></i>
           <ul>
-            <li></li>
             <li>Mongo DB</li>
             <li>PostgreSQL</li>
             <li>RESTFul API</li>
@@ -113,7 +110,9 @@
 
   <section id="projects">
     <div class="container">
-
+      <ul>
+        <li>Korean Cookbook</li>
+      </ul>
     </div>
   </section>
 
@@ -127,7 +126,7 @@
           <a href="http://twitter.com/rainydays"><i class="fa fa-twitter"></i></a>
         </div>
         <div class="col-md-3">
-          <a href="mailto:yikim01@gmail.om@gmail.com"><i class="fa fa-envelope-o"></i></a>
+          <a href="mailto:yikim01@gmail.com"><i class="fa fa-envelope-o"></i></a>
         </div>
         <div class="col-md-3">
           <a href="http://linkedin.com/yikim01"><i class="fa fa-linkedin"></i></a>
@@ -135,5 +134,9 @@
       </div>
     </div>
   </section>
+    <!-- JS -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
